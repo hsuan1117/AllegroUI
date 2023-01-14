@@ -21,7 +21,8 @@ typedef void(*func_ptr_register)(component *component, ALLEGRO_EVENT event);
 typedef enum {
     RURU_TEXT_INPUT,
     RURU_TEXT_BUTTON,
-    RURU_PROGRESS_BAR
+    RURU_PROGRESS_BAR,
+    SELECTOR
 } ComponentType;
 
 typedef struct {

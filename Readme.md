@@ -2,6 +2,9 @@
 
 ## Installation
 
+1. Extract files into `Lib/components`  
+![](.Readme_images/extract_files.png)
+
 1. (a) Replace `struct Scene` to `AllegroScene in `game.h`
 
 ```c

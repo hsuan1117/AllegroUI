@@ -6,6 +6,7 @@
 #include "TextInput.h"
 #include "TextButton.h"
 #include "ProgressBar.h"
+#include "Select.h"
 
 ALLEGRO_FONT *mainFont = NULL;
 ALLEGRO_FONT *smallFont = NULL;
@@ -23,12 +24,14 @@ void register_scene_components(void *scene, ALLEGRO_EVENT event) {
                     ((TextButton *) (active_scene->components[i]))->event_register(
                             (component *) (active_scene->components[i]), event);
                     break;
-
                 case RURU_PROGRESS_BAR:
                     ((ProgressBar *) (active_scene->components[i]))->event_register(
                             (component *) (active_scene->components[i]), event);
                     break;
-
+                case SELECTOR:
+                    ((Selector *) (active_scene->components[i]))->event_register(
+                            (component *) (active_scene->components[i]), event);
+                    break;
             }
         }
     }
