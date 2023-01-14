@@ -68,6 +68,7 @@ scene.components[cnt] = &input;
 * TextInput
 * TextButton
 * ProgressBar
+* Selector
 
 ## Contribute
 To add component, following these steps:
